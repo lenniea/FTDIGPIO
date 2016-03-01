@@ -1,0 +1,146 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  10, 10, 220, 147
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "FTDI GPIO"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Port:",IDC_STATIC,4,7,16,8
+    COMBOBOX        IDC_PORT,32,5,110,95,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_OPEN_CLOSE,152,4,60,14
+    GROUPBOX        "Port D (BITBANG)",IDC_STATIC,4,28,124,112
+    CONTROL         "Bit &0 TXD (Orange)",IDC_BIT_D0,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,40,76,10
+    CONTROL         "Bit &1 RXD (Yellow)",IDC_BIT_D1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,52,74,10
+    CONTROL         "Bit &2 RTS (Green)",IDC_BIT_D2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,64,72,10
+    CONTROL         "Bit &3 CTS (Brown)",IDC_BIT_D3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,76,72,10
+    CONTROL         "Bit &4 DTR (Grey)",IDC_BIT_D4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,88,68,10
+    CONTROL         "Bit &5 DSR (Purple)",IDC_BIT_D5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,100,73,10
+    CONTROL         "Bit &6 DCD (White)",IDC_BIT_D6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,112,72,10
+    CONTROL         "Bit &7 RI (Blue)",IDC_BIT_D7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,124,59,10
+    GROUPBOX        "Port C (CBUS)",IDC_STATIC,148,28,64,112
+    CONTROL         "Bit &0",IDC_BIT_C0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,40,30,10
+    CONTROL         "Bit &1",IDC_BIT_C1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,52,30,10
+    CONTROL         "Bit &2",IDC_BIT_C2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,64,30,10
+    CONTROL         "Bit &3",IDC_BIT_C3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,76,30,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST ""Res/FTDIGPIO.exe.manifest""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDD_MAIN                ICON    DISCARDABLE     "res/FTDIGPIO.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 140
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_NAME            "FTDI GPIO"
+    IDS_OPEN                "Open"
+    IDS_CLOSE               "Close"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "Res/FTDIGPIO.exe.manifest"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
